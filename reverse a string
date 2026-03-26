@@ -1,0 +1,12 @@
+# reverse a string Using While Loop
+
+name = input("Enter string: ")
+print("original string :", name)
+
+r_name = " "
+count = len(name)
+
+while count > 0:
+    r_name = r_name+name[count-1]
+    count = count -1
+print("reverse string is : ", r_name)
