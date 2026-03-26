@@ -21,3 +21,10 @@ r_name = ""
 for char in name:
     r_name = char+r_name
 print("reverse string: ",r_name)
+---------------------------------------------------------------
+
+## Using Slicing
+
+name = input("Enter String name: ")
+print("Original String:",name)
+print("Reverse String is:",name[::-1])
