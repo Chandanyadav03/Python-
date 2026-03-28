@@ -1,0 +1,33 @@
+🔹 **Method 1: List Membership Method**
+```python
+name = input("Enter name: ")
+Vowel = ['a','e','i','o','u']
+count = 0
+
+for char in name:
+    if char in Vowel:
+        count+= 1
+print("Total Vowel Number:", count)
+
+--------------------------------------------------------------------------
+
+🔹 Method 2: Logical OR Condition Method
+
+name = input("Enter name: ")
+count = 0
+
+for char in name:
+    if (char=='a' or char=='e'or char=='i' or char=='o'or char=='u'):
+        count+= 1
+print("Total Vowel Number:", count)
+
+-----------------------------------------------------------------------------
+🔹 Method 3: String Membership + Case Handling Method
+
+name = input("Enter name: ")
+count = 0
+
+for char in name.lower():
+    if char in "aeiou":
+        count += 1
+print("Total Vowel Number:", count)
