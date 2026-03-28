@@ -1,5 +1,5 @@
-🔹 **Method 1: List Membership Method**
-```python
+🔹 Method 1: List Membership Method
+
 name = input("Enter name: ")
 Vowel = ['a','e','i','o','u']
 count = 0
