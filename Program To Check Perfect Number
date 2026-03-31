@@ -12,3 +12,40 @@ if sum == num:
     print("Perfect Number")
 else:
     print("Not Perfect Number")
+---------------------------------------------------
+
+✅ Method 2: Optimized (Half Range)
+num = int(input("Enter number: "))
+total = 0
+
+for i in range(1, num//2 + 1):
+    if num % i == 0:
+        total += i
+
+if total == num:
+    print("Perfect Number")
+else:
+    print("Not Perfect Number")
+
+------------------------------------------------------
+
+✅ Method 3: Using Function
+def is_perfect(num):
+    total = 0
+    for i in range(1, num):
+        if num % i == 0:
+            total += i
+    return total == num
+
+n = int(input("Enter number: "))
+
+if is_perfect(n):
+    print("Perfect Number")
+else:
+    print("Not Perfect Number")
+-------------------------------------------------------
+
+✅ Method 4: One-Line (Advanced)
+num = int(input("Enter number: "))
+print("Perfect Number" if num == sum(i for i in range(1, num) if num % i == 0) else "Not Perfect Number")
+
