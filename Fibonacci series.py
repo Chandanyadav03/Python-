@@ -1,4 +1,4 @@
-# 1. Using for Loop
+# 1. Using for Loop ----------------------------------------
 
 n = int(input("Enter number: "))
 a, b = 0, 1
@@ -7,7 +7,8 @@ for i in range(n):
     print(a, end=" ")
     a, b = b, a + b
 
-# 2. Using while Loop
+
+# 2. Using while Loop ------------------------------------
 
 n = int(input("Enter number: "))
 a, b = 0, 1
@@ -18,7 +19,7 @@ while i < n:
     a, b = b, a + b
     i += 1
 
-# 3. Using Recursion
+# 3. Using Recursion -------------------------------------
 
 def fib(n):
     if n <= 1:
@@ -30,7 +31,7 @@ n = int(input("Enter number: "))
 for i in range(n):
     print(fib(i), end=" ")
 
-# 4. Using List (Store Series)
+# 4. Using List (Store Series) --------------------------------
 
 n = int(input("Enter number: "))
 
@@ -41,7 +42,7 @@ for i in range(2, n):
 
 print(fib)
 
-# 5. Using Lambda Function
+# 5. Using Lambda Function -----------------------------------------
 
 from functools import reduce
 
@@ -53,7 +54,7 @@ for i in range(2, n):
 
 print(fib)
 
-# 6. Using Memoization (Optimized Recursion)
+# 6. Using Memoization (Optimized Recursion) --------------------------------------
 
 def fib(n, memo={}):
     if n in memo:
@@ -67,4 +68,6 @@ n = int(input("Enter number: "))
 
 for i in range(n):
     print(fib(i), end=" ")
+
+
 
