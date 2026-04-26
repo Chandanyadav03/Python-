@@ -65,6 +65,7 @@ def fib(n, memo={}):
     return memo[n]
 
 n = int(input("Enter number: "))
+--------------------------------------------------------------------------------------
 
 for i in range(n):
     print(fib(i), end=" ")
