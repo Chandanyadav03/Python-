@@ -7,6 +7,10 @@ for i in range(n):
     print(a, end=" ")
     a, b = b, a + b
 
+Output ----------
+
+Enter number: 10
+0 1 1 2 3 5 8 13 21 34
 
 # 2. Using while Loop ------------------------------------
 
