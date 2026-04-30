@@ -23,3 +23,25 @@ for char in str1:
         output = output + (var * num)
 
 print("Decoded string:", output)
+
+---------------------------------------------------------------------------------------
+
+🔄 Reverse Problem 
+
+👉 Convert:
+
+aaabbcccc → a3b2c4
+
+s = input("Enter string: ")
+output = ""
+
+count = 1
+
+for i in range(len(s)):
+    if i+1 < len(s) and s[i] == s[i+1]:
+        count += 1
+    else:
+        output = output + s[i] + str(count)
+        count = 1
+
+print("Encoded string:", output)
