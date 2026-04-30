@@ -1,0 +1,25 @@
+# String Decoder (Python)
+
+## 📌 Description
+This program takes a string where each character is followed by a number and expands it.
+
+## 🧠 Example
+Input:
+a3b2c4
+
+Output:
+aaabbcccc
+
+
+
+str1 = input("Enter string: ")
+output = ""
+
+for char in str1:
+    if char.isalpha():
+        var = char
+    else:
+        num = int(char)
+        output = output + (var * num)
+
+print("Decoded string:", output)
