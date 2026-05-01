@@ -14,7 +14,20 @@ if IsPrime(num1) and IsPrime(num2):
     if abs(num1-num2)==2:
         print(f"{num1} and {num2} is a twin prime numbers")
     else:
-        print(f"{num1} and {num2} is not a prime numbers.")
+        print(f"{num1} and {num2} is not a twin prime numbers.")
 else:
     print("Numbers are not prime")
 
+Output ----------------------------------------------------------
+
+Enter first Number: 11
+Enter Second Numbers: 13
+11 and 13 is a twin prime numbers
+
+Enter first Number: 11
+Enter Second Numbers: 17
+11 and 17 is not a twin prime numbers.
+
+Enter first Number: 1
+Enter Second Numbers: 6
+Numbers are not prime
