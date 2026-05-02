@@ -23,3 +23,8 @@ def iterate(lst, start, end):
     iterate(lst, start + 1, end)
 
 iterate(lst, 1, 4)
+
+Output --------
+20
+30
+40
