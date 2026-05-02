@@ -1,0 +1,11 @@
+lst = eval(input("Enter a list: "))
+start = eval(input("Enter start index: "))
+end = eval(input("Enter end index: "))
+
+def iterate(lst, start, end):
+    if start < 0 or start >= end or end >= len(lst):
+        return
+    print(lst[start])
+    iterate(lst, start + 1, end)
+
+iterate(lst, start, end)
