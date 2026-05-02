@@ -9,3 +9,17 @@ def iterate(lst, start, end):
     iterate(lst, start + 1, end)
 
 iterate(lst, start, end)
+
+
+---------------------------------------------------------
+# Without user input
+
+lst = [10, 20, 30, 40, 50]
+
+def iterate(lst, start, end):
+    if start >= end:
+        return
+    print(lst[start])
+    iterate(lst, start + 1, end)
+
+iterate(lst, 1, 4)
