@@ -1,0 +1,30 @@
+## check if a number is armstrong
+
+What is an Armstrong number?
+
+For a 3-digit number, if the sum of the cubes of its digits equals the original number, it is an Armstrong number.
+
+Example:
+153
+
+1³ + 5³ + 3³
+= 1 + 125 + 27
+= 153
+
+So, 153 is an Armstrong number.
+-------------------------------------------------------------------------------------
+
+num = int(input("Enter a number: "))
+
+original = num
+sum = 0
+
+while num > 0:
+    digit = num % 10
+    sum = sum + digit ** 3
+    num = num // 10
+
+if sum == original:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
