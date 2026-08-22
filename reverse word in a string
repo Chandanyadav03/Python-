@@ -1,0 +1,15 @@
+## reverse word in a string
+
+word = input("Enter a word: ")
+reverse = word[::-1]
+print("Reversed word:", reverse)
+
+
+
+word = input("Enter a word: ")
+reverse = ""
+
+for char in word:
+    reverse = char + reverse
+
+print("Reversed word:", reverse)
