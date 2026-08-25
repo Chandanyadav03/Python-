@@ -1,0 +1,11 @@
+## Find the smallest element in an array
+
+
+number = [100,50,20,5,500]
+small = number[0]
+
+for num in number:
+    if num < small:
+        small = num
+
+print("Smallest number:", small)
