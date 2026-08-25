@@ -1,0 +1,20 @@
+## Find the First Non-Repeating Character
+
+Example:
+
+Input:  swiss
+Characters:
+s → 3 times
+w → 1 time ✅
+i → 1 time
+First non-repeating character = w
+------------------------------------------------------------------------------
+
+text = input("Enter a string: ")
+
+for char in text:
+    if text.count(char) == 1:
+        print("First non-repeating character:", char)
+        break
+else:
+    print("No non-repeating character")
