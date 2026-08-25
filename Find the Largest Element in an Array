@@ -1,0 +1,11 @@
+##  Find the Largest Element in an Array
+
+
+arr = [10, 25, 7, 45, 18]
+largest = arr[0]
+
+for num in arr:
+    if num > largest:
+        largest = num
+
+print("Largest element:", largest)
