@@ -1,0 +1,10 @@
+## Find the Sum of Array Elements
+
+
+arr = [10, 20, 30, 40]
+sum = 0
+
+for num in arr:
+    sum = sum + num
+
+print("Sum of array elements:", sum)
