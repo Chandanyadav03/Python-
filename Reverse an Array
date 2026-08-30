@@ -1,0 +1,10 @@
+## Reverse an Array
+
+
+arr = [10, 20, 30, 40, 50]
+reverse = []
+
+for num in arr:
+    reverse.insert(0, num)
+
+print("Reversed array:", reverse)
