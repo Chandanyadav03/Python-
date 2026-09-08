@@ -1,0 +1,30 @@
+## Find Union of Two Arrays
+
+## Union means combining the elements of both arrays without duplicates.
+
+
+arr1 = [10, 20, 30]
+arr2 = [30, 40, 50]
+
+set1 = set(arr1)
+set2 = set(arr2)
+
+union = set1 | set2
+print("Union:", union)
+
+==========================================================
+
+arr1 = [10, 20, 30]
+arr2 = [30, 40, 50]
+
+union = []
+
+for num in arr1:
+    if num not in union:
+        union.append(num)
+
+for num in arr2:
+    if num not in union:
+        union.append(num)
+
+print("Union:", union)
