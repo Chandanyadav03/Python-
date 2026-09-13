@@ -1,0 +1,19 @@
+## Implement Linear Search
+
+📌 What is Linear Search?
+   Check each element one by one until you find the value you are looking for.
+
+
+arr = [10, 25, 30, 45, 50]
+target = 30
+
+found = False
+
+for i in range(len(arr)):
+    if arr[i] == target:
+        print("Element found at index:", i)
+        found = True
+        break
+
+if found == False:
+    print("Element not found")
