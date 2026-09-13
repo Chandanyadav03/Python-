@@ -1,0 +1,31 @@
+## Implement Binary Search
+
+📌 What is Binary Search?
+      Binary Search is a searching technique where we repeatedly divide the sorted array into half.
+
+                     ⚠️ Important: Binary Search works only when the array is sorted.
+
+===============================================================================================================
+
+arr = [10, 20, 30, 40, 50, 60, 70]
+target = 50
+
+left = 0
+right = len(arr) - 1
+
+while left <= right:
+
+    middle = (left + right) // 2
+
+    if arr[middle] == target:
+        print("Element found at index:", middle)
+        break
+
+    elif arr[middle] < target:
+        left = middle + 1
+
+    else:
+        right = middle - 1
+
+else:
+    print("Element not found")
