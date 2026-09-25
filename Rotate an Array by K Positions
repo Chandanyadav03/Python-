@@ -1,0 +1,38 @@
+## Rotate an Array by K Positions
+
+Rotate an array by K positions means move the elements to the left or right by K positions.
+
+There are two types:
+- Right rotation → elements move toward the right.
+- Left rotation → elements move toward the left.
+
+## Example
+arr = [1, 2, 3, 4, 5]k = 2
+
+Rotate right by 2:
+Original:
+[1, 2, 3, 4, 5]
+
+Move 5 to front:
+[5, 1, 2, 3, 4]
+
+Move 4 to front:
+[4, 5, 1, 2, 3]
+
+## Answer:
+           [4, 5, 1, 2, 3]
+
+## The important thing is:
+                           The order of the elements stays the same; only their positions change.
+
+===================================================================================================================
+
+arr = [1, 2, 3, 4, 5]
+k = 2
+
+k = k % len(arr)
+arr = arr[-k:] + arr[:-k]
+print(arr)
+
+Output:
+[4, 5, 1, 2, 3]
