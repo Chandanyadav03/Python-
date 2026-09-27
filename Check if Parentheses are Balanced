@@ -1,0 +1,44 @@
+## Check if Parentheses are Balanced
+
+s = "(()())"
+stack = []
+
+for char in s:
+    if char == '(':
+        stack.append(char)
+
+    elif char == ')':
+        if len(stack) == 0:
+            print("Not Balanced")
+            break
+
+        stack.pop()
+
+else:
+    if len(stack) == 0:
+        print("Balanced")
+    else:
+        print("Not Balanced")
+
+=====================================================================================================
+
+
+s = "(()())"
+count = 0
+
+for char in s:
+    if char == '(':
+        count += 1
+
+    elif char == ')':
+        count -= 1
+
+    if count < 0:
+        print("Not Balanced")
+        break
+
+else:
+    if count == 0:
+        print("Balanced")
+    else:
+        print("Not Balanced")
