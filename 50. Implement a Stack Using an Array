@@ -23,3 +23,34 @@ if len(stack) == 0:
     print("Stack is empty")
 else:
     print("Stack is not empty")
+
+=======================================================================================================================
+
+stack = []
+
+def push(value):
+    stack.append(value)
+
+def pop():
+    if len(stack) == 0:
+        return "Stack is empty"
+    return stack.pop()
+
+def peek():
+    if len(stack) == 0:
+        return "Stack is empty"
+    return stack[-1]
+
+def is_empty():
+    return len(stack) == 0
+
+
+push(10)
+push(20)
+push(30)
+
+print("Stack:", stack)
+print("Top:", peek())
+print("Removed:", pop())
+print("Stack after pop:", stack)
+print("Is empty:", is_empty())
