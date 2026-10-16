@@ -14,3 +14,20 @@ for num in numbers:
         second = num
 
 print("Second largest:", second)
+
+==========================================================================
+
+arr = [1, 5, 50, 10, 30, 80, 25, 10]
+
+largest = float('-inf')
+second = float('-inf')
+
+for num in arr:
+    if num > largest:
+        second = largest
+        largest = num
+    elif num > second and num != largest:
+        second = num
+
+print("Largest:", largest)
+print("Second largest:", second)
